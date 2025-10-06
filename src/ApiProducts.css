@@ -1,0 +1,144 @@
+.main {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.label{
+  display: flex;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  font-size: larger;
+}
+
+.main button{
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.click {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clicked {
+  background-color: #007bff;
+  color: white;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.overlay-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.overlay-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.sbuttons {
+  margin-left: auto;
+  padding: 4px 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.sbuttons:hover {
+  background-color: #218838;
+}
+
+.divvalue {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.values {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.values img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.waiting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wait {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.oops {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}

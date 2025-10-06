@@ -1,266 +1,41 @@
-*{
-  background-color: burlywood;
-}
-label{
-  display: block;
-  width: 300px;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: crimson;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: bolder;
-  box-shadow: 0px 0px 20px;
-}
-.main{
-  display: flex;
-}
-.click{
-  display: block;
-  width: 200px;
-  color: rgb(47, 128, 131);
-  background-color: white;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: bolder;
-  font-style: italic;
-  transition: 500ms ease-in-out;
-  box-shadow: 0px 0px 25px;
-}
-.click:hover{
-  width: 201px;
-  border: 1px solid grey;
-  font-style: normal;
-}
-.clicked{
-  width: 210px;
-  color: white;
-  background-color: rgb(47, 128, 131);
-  margin: auto;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  font-weight: bolder;
-  font-style: italic;
-  transition: 100ms ease-in-out;
-  border: 2px solid white;
-  box-shadow: 0px 0px 25px;
-}
-.clicked:hover{
-  width: 212px;
-  border: 2px solid white;
-  font-style: normal;
-}
-.divvalue{
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px;
-  gap: 10px;
-  margin: 10px;
-}
-.values{
+.home-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 400px;
-  margin: 20px auto;
-  color: black;
-  background-color: cadetblue;
-  padding: 10px;
-  border: 2px solid gray;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: 100ms ease-in-out;
-  box-shadow: 0px 0px 5px rgb(255, 0, 0);
-}
-.values:hover{
-  /* width: 308px; */
-  border: 2px solid black;
-  font-style: normal;
-  box-shadow: 0px 0px 20px rgb(255, 0, 0);
-}
-.values p{
-  padding: 10px;
-  box-shadow: 0px 0px 25px;
-  margin: 5px;
-  text-align: center;
-}
-.values img{
-  width: 200px;
-  max-height: 250px;
-  padding: 10px;
-  background-color: transparent;
-  box-shadow: 0px 0px 25px;
-  margin: 20px;
-  transition: 100ms ease-in;
-}
-.values img:hover{
-  padding: none;
-  background-color: none;
-  box-shadow: none; 
-  width: 210px;
-}
-.oops{
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: bolder;
-  font-size: larger;
-  width: 500px;
-  padding: 10px;
-  text-align: center;
-}
-.wait{
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: bolder;
-  font-size: larger;
-  width: 500px;
-  padding: 10px;
-  text-align: center;
-}
-.waiting{
-  display: block;
-  gap: 10px;
-  margin: auto;
-}
-.waiting div{
-  padding: 50px;
-  display: block;
-  margin: auto;
-  margin-top: 50px;
-  font-weight: bolder;
-}
-
-.input{
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  width: 300px;
-  height: 50px;
-  padding: 5px;
-  border-style: none;
-  border: 2px solid gray;
-}
-
-.overlay{
-  display: block;
   align-items: center;
-  position: absolute;
-  gap: 10px;
-  margin: 5px auto;
-  padding: 5px;
-  width: 500px;
-  height: 500px;
-  border: 1px solid gray;
-  left: 40%;
-  background-color: transparent;
-  box-shadow: 0px 150px 350px;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-}
-.overlay div{
-  margin: 10px;
-  padding: 10px;
-  border-top: 5px;
-  border-bottom: 5px;
-}
-.overlay div img{
-  width: 25px;
-  flex: 0.5;
-}
-.overlay div p{
-  flex: 1;
-}
-.overlay div button{
-  flex: 1;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
 }
 
-.relative{
-  position: relative;
-}
-
-
-.sbuttons{
-  background-color: rgb(245, 51, 51);
-  color: aqua;
-  border-style: none;
-  border: 1px solid salmon;
-  border-radius: 5px;
-  font-style: italic;
-  box-shadow: 0px 0px 10px black;
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.Dvalues{
-  width: 750px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: black;
-  background-color: cadetblue;
-  padding: 10px;
-  border: 2px solid gray;
-  border-radius: 5px;
+.home-title {
+  font-size: 3rem;
   font-weight: bold;
-  transition: 300ms ease-in-out;
-  justify-content: center;
-  box-shadow: 0px 0px 5px rgb(255, 0, 0);
+  margin-bottom: 30px;
+  color: #333;
 }
-.Dvalues div{
+
+.home-buttons {
   display: flex;
+  gap: 20px;
+  
 }
-.Dvalues p{
-  padding: 10px;
-  box-shadow: 0px 0px 25px;
-  margin: 10px;
-  text-align: center;
+
+.home-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.Dvalues div img{
-  flex: 1;
-  margin: auto;
-  width: 250px;
-  padding: 10px;
-  background-color: transparent;
-  box-shadow: 0px 0px 25px;
+
+.home-btn:hover {
+  background-color: #0056b3;
 }
-.Dvalues div p{
-  display: block;
-  flex: 1;
-  width: 200px;
-}
-.Dvalues div div{
-  text-align: center;
-  display: block;
-  margin: auto;
-}
-.Dsbuttons{
-  background-color: rgb(245, 51, 51);
-  color: aqua;
-  border-style: none;
-  border: 1px solid salmon;
-  border-radius: 5px;
-  font-style: italic;
-  box-shadow: 0px 0px 35px black;
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: block;
+
+.home-btn.active {
+  background-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }

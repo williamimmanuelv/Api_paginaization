@@ -1,0 +1,104 @@
+label{
+  display: flex;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  background-color: blue;
+  color: white;
+}
+.main {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin: auto;
+  width: 200px;
+}
+
+.click {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clicked {
+  background-color: #007bff;
+  color: white;
+}
+
+.Dvalues {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.Dvalues p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.Dvalues img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.Dvalues .des {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.Dvalues div p {
+  margin: 4px 0;
+}
+
+.Dsbuttons {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffc107;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Dsbuttons:hover {
+  background-color: #e0a800;
+}
+
+.waiting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wait {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.oops {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
